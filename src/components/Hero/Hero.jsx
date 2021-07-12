@@ -35,10 +35,10 @@ const Header = () => {
               <span className="text-color-main">{` ${name}`}</span>
               <br />
               <Emoji symbol="👨‍💻" label="developer" />
-              {` ${subtitle} `}
+              {` ${subtitle} `} {isMobile && <br />}
               <Typewriter
                 options={{
-                  strings: ['Senior Developer', 'Senior UI/UX Designer', 'FE Team Lead'],
+                  strings: ['Senior Developer', 'UI/UX Designer', 'FE Team Lead'],
                   autoStart: true,
                   loop: true,
                   delay: 60,
