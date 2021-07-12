@@ -60,6 +60,18 @@
   }
 }
 
+/* About Style */
+
+.cta-btn--current-role {
+  padding: 0;
+  color: $dark-blue-text;
+
+  &:hover {
+    color: $dark-blue-text;
+    border-bottom: 1px solid $dark-blue-text;
+  }  
+}
+
 /* Resume Style */
 .cta-btn--resume {
   color: $dark-blue-text;

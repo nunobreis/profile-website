@@ -39,7 +39,18 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
-                <p className="about-wrapper__info-text">{paragraphThree}</p>
+                <p className="about-wrapper__info-text">
+                  I currently work for{' '}
+                  <a
+                    className="cta-btn cta-btn--current-role"
+                    target="_blank"
+                    href="https://www.deloittedigital.com/us/en/about/locations/united-kingdom.html"
+                    rel="noreferrer"
+                  >
+                    Deloitte Digital
+                  </a>{' '}
+                  in London, UK. {paragraphThree}
+                </p>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
