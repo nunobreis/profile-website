@@ -29,16 +29,16 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
-  {
-    id: nanoid(),
-    img: 'nakhoda.png',
-    title: 'CreateiQ',
-    info: "Currently working as the Frontend Lead for the Nakhoda team, I've been working on the Linklater's CreateiQ project since the beginning 2020. CreateiQ is a digital contract automation and negotiation platform that captures valuable structured data from legal documents at source.",
-    info2: 'React, Redux, SASS, Jest, Courgette, Python, Flask, PHP, SCALA',
-    url: 'https://wwwqa.createiq.tech/',
-    repo: 'https://www.linklaters.com/en/about-us/nakhoda',
-    company: 'Linklaters',
-  },
+  // {
+  //   id: nanoid(),
+  //   img: 'nakhoda.png',
+  //   title: 'CreateiQ',
+  //   info: "Currently working as the Frontend Lead for the Nakhoda team, I've been working on the Linklater's CreateiQ project since the beginning 2020. CreateiQ is a digital contract automation and negotiation platform that captures valuable structured data from legal documents at source.",
+  //   info2: 'React, Redux, SASS, Jest, Courgette, Python, Flask, PHP, SCALA',
+  //   url: 'https://wwwqa.createiq.tech/',
+  //   repo: 'https://www.linklaters.com/en/about-us/nakhoda',
+  //   company: 'Linklaters',
+  // },
   {
     id: nanoid(),
     img: 'hamutuk.png',
