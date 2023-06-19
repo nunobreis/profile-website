@@ -10,10 +10,17 @@ import Emoji from '../Emoji/Emoji';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title = 'Hi, my name is', name = 'Nuno', subtitle = 'I am', cta = 'Know More' } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const typeWriterOptions = {
+    strings: ['an Egineering Manager', 'a Senior Developer', 'a UI/UX Designer'],
+    autoStart: true,
+    loop: true,
+    delay: 40,
+    pauseFor: 500,
+  };
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -32,19 +39,11 @@ const Header = () => {
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
               {title}
-              <span className="text-color-main">{` ${name}`}</span>
+              <span className="text-color-main">&nbsp;{`${name}`}</span>
               <br />
               <Emoji symbol="👨‍💻" label="developer" />
               {` ${subtitle} `} {isMobile && <br />}
-              <Typewriter
-                options={{
-                  strings: ['Senior Developer', 'UI/UX Designer', 'FE Team Lead'],
-                  autoStart: true,
-                  loop: true,
-                  delay: 60,
-                  pauseFor: 1000,
-                }}
-              />
+              <Typewriter options={typeWriterOptions} />
             </h1>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
