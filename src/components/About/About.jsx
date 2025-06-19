@@ -57,7 +57,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href="/resume/Nuno_Reis_CV_2024.pdf"
+                      href="/resume/NUNO_REIS_CV_2025.pdf"
                     >
                       Resume
                     </a>
